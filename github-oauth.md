@@ -27,7 +27,7 @@ Create a new project
 $ oc new-project <your Rahti project name> --description="csc_project:<your CSC project name>"
 ```
 
-After creatig the OAuth application, deploy JupyterHub using the template
+After creating the OAuth application, deploy JupyterHub using the template
 ```bash
 $ oc new-app -f <path/to/template> -p PARAM1=Value1 -p PARAM2=Value2
 ```
