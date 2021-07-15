@@ -4,11 +4,13 @@ Deploys JupyterHub with GitHub OAuth as the authentication method.
 
 ## Creating GitHub OAuth application
 
-Using the template requires an existing GitHub OAuth application. In the OAuth application, set:
+Using the template requires an existing GitHub OAuth application. Create a new OAuth application on GitHub in **Settings > Developer settings > OAuth apps > New OAuth App**.
+
+When creating the OAuth application, set:
 - `homepage URL` as `https://<jupyterhub appliaction name>-<namespace>.rahtiapp.fi`
 - `authorization callback URL` as `https://<jupyterhub application name>-<namespace>.rahtiapp.fi/hub/oauth_callback`
 
-You need the following details from the OAuth application. Make sure you have them when using the template
+You need the following details from the OAuth application in the template. Make sure you have them when deploying JupyterHub
 - `client ID`
 - `client secret`
 - `authorization callback URL` 
