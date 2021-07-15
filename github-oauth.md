@@ -39,8 +39,8 @@ $ oc new-app -f <path/to/template> -p PARAM1=Value1 -p PARAM2=Value2
 | Parameter                       | Description                                                                                    | Default value |
 | ------------------------------- | ---------------------------------------------------------------------------------------------- | ------------- |
 | APPLICATION_NAME                | Name of the JupyterHub application                                                             | jupyterhub    |
-| JUPYTERHUB_IMAGE                | Link to the JupyterHub image                                                                   | cscfi/jupyterhub-quickstart |
-| NOTEBOOK_IMAGE                  | Link to the Notebook image                                                                     | quay.io/jupyteronopenshift/s2i-minimal-notebook-py36:2.5.1 |
+| JUPYTERHUB_IMAGE                | Name of the JupyterHub image                                                                   | cscfi/jupyterhub-quickstart |
+| NOTEBOOK_IMAGE                  | Name of the Notebook image                                                                     | quay.io/jupyteronopenshift/s2i-minimal-notebook-py36:2.5.1 |
 | OAUTH_CLIENT_ID                 | Client ID of your GitHub OAuth application                                                     | (no default)  |
 | OAUTH_CLIENT_SECRET             | Client secret of your GitHub OAuth application                                                 | (no default)  |
 | OAUTH_CALLBACK_URL              | Callback URL of your GitHub OAuth application (in the form `https://<app name>-<namespace>.rahtiapp.fi/hub/oauth_callback`) | (no default) |
@@ -88,4 +88,4 @@ c.Authenticator.allowed_users = {'list','of','users'}
 
 The ConfigMap `<APPLICATION_NAME>-req` has a `requirements.txt` file which you can use to add Python packages into notebooks.
 
-Note that new packages will only be available to users if their notebook servers are restarted. Servers can be stopped either through the admin view of JupyterHub's web UI (at `/hub/admin`) or by killing the notebook pods. They can be restarted by logging in again.
+Note that new packages will only be available to users if their notebook servers are restarted. Servers can be stopped either through the admin view of JupyterHub's web UI (at `/hub/admin`) or by killing the notebook pods. They can be restarted from the control panel of the web UI or by logging in again.
