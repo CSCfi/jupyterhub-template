@@ -8,4 +8,4 @@ There are two templates for deploying JupyterHub on OpenShift depending on the a
 - [GitHub OAuth](github-oauth.md)
 - [Native authenticator](native-authenticator.md)
 
-Both templates and the JupyterHub [image](https://github.com/CSCfi/jupyterhub-quickstart) used in them are based on https://github.com/jupyter-on-openshift/jupyterhub-quickstart.
+Both templates and the JupyterHub [image](https://github.com/CSCfi/jupyterhub-quickstart) used in them are based on <https://github.com/jupyter-on-openshift/jupyterhub-quickstart>.
